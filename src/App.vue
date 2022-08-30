@@ -7,8 +7,8 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Dropdown from './components/dropdownFruits.vue'
-import 'materialize-css'
-import 'materialize-css/dist/css/materialize.css'
+// import 'materialize-css'
+// import 'materialize-css/dist/css/materialize.css'
 // import 'material-design-icons/iconfont/material-icons.css'
 export default {
   name: 'App',
