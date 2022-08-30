@@ -6,7 +6,7 @@
           <!-- <i class="material-icons prefix">textsms</i> -->
           <div class="check" v-on:click="aaaaa">
           <input type="text" placeholder="Select an item " id="autocomplete" class="autocomplete" v-on:keyup="ffff">
-          <div>dsds</div>
+          <div class="icon"></div>
         </div>
           <!-- <chevron_right></chevron_right> -->
           <div class="col s6 m3">
@@ -85,6 +85,8 @@ export default {
       const autocomplete = document.querySelector('#autocomplete');
       console.log(results)
       autocomplete.style.boxShadow = "none"
+      autocomplete.style.borderBottomLeftRadius = "0px"
+      autocomplete.style.borderBottomRightRadius = "0px"
       results.style.display = "block"
 
       //this.ffff()
@@ -123,13 +125,14 @@ export default {
   display: none;
   background: #fff;
   margin: 0 auto;
+  width: 15.3%;
 }
 #options{
   margin-top: inherit;
   margin-bottom: 2%;
   font-family:"Lato", sans-serif;
   font-size:20px;
-  font-weight:600
+  
 }
 #options:hover{
   
@@ -138,5 +141,12 @@ export default {
 }
 .spaceResults{
   display:flex;
+}
+.icon{
+  float: right;
+  display: contents;
+}
+::placeholder{
+  font-size: medium;
 }
 </style>
