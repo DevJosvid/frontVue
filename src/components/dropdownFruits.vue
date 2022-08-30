@@ -11,7 +11,7 @@
           <!-- <chevron_right></chevron_right> -->
           <div class="col s6 m3">
       <div class="row spaceResults">
-          <div id="dddd">
+          <div id="res">
             <p id="options" v-bind:key="index" v-for="(fruit,index) in Fruits"> 
               {{fruit}}
             </p> 
@@ -81,7 +81,7 @@ export default {
         
     }  ,
     aaaaa:function(){
-      const results = document.querySelector('#dddd');
+      const results = document.querySelector('#res');
       const autocomplete = document.querySelector('#autocomplete');
       console.log(results)
       autocomplete.style.boxShadow = "none"
@@ -121,7 +121,7 @@ export default {
 .autocomplete::placeholder{
   size: 2rem;
 }
-#dddd{
+#res{
   display: none;
   background: #fff;
   margin: 0 auto;
